@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.35906.104
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PiDay", "PiDay.csproj", "{FF8C73C2-B40E-4879-AF01-0077412D0D33}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF8C73C2-B40E-4879-AF01-0077412D0D33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF8C73C2-B40E-4879-AF01-0077412D0D33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF8C73C2-B40E-4879-AF01-0077412D0D33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF8C73C2-B40E-4879-AF01-0077412D0D33}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CE8CEFA8-395F-45B9-B6D5-7A8C26C19A58}
+	EndGlobalSection
+EndGlobal
