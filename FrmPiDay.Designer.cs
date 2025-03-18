@@ -35,6 +35,7 @@ partial class FrmPiDay
         txtPI = new RichTextBox();
         label3 = new Label();
         cmbMethod = new ComboBox();
+        pbProgress = new ProgressBar();
         SuspendLayout();
         // 
         // label1
@@ -42,9 +43,9 @@ partial class FrmPiDay
         label1.AutoSize = true;
         label1.Location = new Point(7, 9);
         label1.Name = "label1";
-        label1.Size = new Size(31, 15);
+        label1.Size = new Size(29, 15);
         label1.TabIndex = 0;
-        label1.Text = "PI = ";
+        label1.Text = "π = ";
         // 
         // btnCalculatePI
         // 
@@ -53,9 +54,9 @@ partial class FrmPiDay
         btnCalculatePI.Name = "btnCalculatePI";
         btnCalculatePI.Size = new Size(76, 21);
         btnCalculatePI.TabIndex = 2;
-        btnCalculatePI.Text = "Calcule PI";
+        btnCalculatePI.Text = "Calcule π";
         btnCalculatePI.UseVisualStyleBackColor = true;
-        btnCalculatePI.Click += btnCalculatePI_Click;
+        btnCalculatePI.Click += BtnCalculatePI_Click;
         // 
         // label2
         // 
@@ -74,7 +75,7 @@ partial class FrmPiDay
         txtDecimalDigits.Name = "txtDecimalDigits";
         txtDecimalDigits.Size = new Size(100, 23);
         txtDecimalDigits.TabIndex = 4;
-        txtDecimalDigits.Text = "2";
+        txtDecimalDigits.Text = "50";
         // 
         // txtPI
         // 
@@ -103,14 +104,24 @@ partial class FrmPiDay
         cmbMethod.Items.AddRange(new object[] { "Lento pra Cassete", "Rápido (Fórmula de Machin)", "Super Rápido (Algoritmo de Gauss-Legendre)" });
         cmbMethod.Location = new Point(70, 166);
         cmbMethod.Name = "cmbMethod";
-        cmbMethod.Size = new Size(138, 23);
+        cmbMethod.Size = new Size(266, 23);
         cmbMethod.TabIndex = 7;
+        // 
+        // pbProgress
+        // 
+        pbProgress.Anchor =  AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+        pbProgress.Location = new Point(94, 196);
+        pbProgress.Name = "pbProgress";
+        pbProgress.Size = new Size(617, 23);
+        pbProgress.TabIndex = 8;
+        pbProgress.Visible = false;
         // 
         // FrmPiDay
         // 
         AutoScaleDimensions = new SizeF(7F, 15F);
         AutoScaleMode = AutoScaleMode.Font;
         ClientSize = new Size(723, 228);
+        Controls.Add(pbProgress);
         Controls.Add(cmbMethod);
         Controls.Add(label3);
         Controls.Add(txtPI);
@@ -119,7 +130,8 @@ partial class FrmPiDay
         Controls.Add(btnCalculatePI);
         Controls.Add(label1);
         Name = "FrmPiDay";
-        Text = "Form1";
+        Text = "Calculadora de π";
+        FormClosing += FrmPiDay_FormClosing;
         Load += FrmPiDay_Load;
         ResumeLayout(false);
         PerformLayout();
@@ -134,4 +146,5 @@ partial class FrmPiDay
     private RichTextBox txtPI;
     private Label label3;
     private ComboBox cmbMethod;
+    private ProgressBar pbProgress;
 }
