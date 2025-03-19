@@ -53,16 +53,16 @@ jobs:
     - name: Upload Build as Artifact
       uses: actions/upload-artifact@v3
       with:
-        name: $${{ env.EXE_NAME }}_Release
-        path: $${{ env.EXE_NAME }}\bin\x64\Release\net9.0-windows
+        name: ${{env.EXE_NAME}}_Release
+        path: ${{env.EXE_NAME}}\bin\x64\Release\net9.0-windows
         
     - name: Pack Build
-      run: 7z a "$${{ env.EXE_NAME }}-${{ github.ref_name }}.zip" .\$${{ env.EXE_NAME }}\bin\x64\Release\net9.0-windows\*
+      run: 7z a "${{env.EXE_NAME}}-${{ github.ref_name }}.zip" .\${{env.EXE_NAME}}\bin\x64\Release\net9.0-windows\*
         
     - name: Publish
       uses: softprops/action-gh-release@v1
       with:
         files: |
-          $${{ env.EXE_NAME }}-${{ github.ref_name }}.zip
+          ${{env.EXE_NAME}}-${{ github.ref_name }}.zip
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
