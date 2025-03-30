@@ -4,9 +4,9 @@
 
 Um pequeno projeto com fins educacionais, criado em live no último dia do π (14/03/2025).
 
-A live no qual este projeto foi desenvolvido por ser assistida no youtube [aqui](https://www.youtube.com/live/7VgwTriDlkU).
+A live no qual este projeto foi desenvolvido por ser assistida no youtube [aqui](https://www.youtube.com/live/7VgwTriDlkU), porém algumas modificações foram feitas posteriormente em off.
 
-Este projeto utiliza a biblioteca Pfz.Math que pode ser encontrada [aqui](https://www.codeproject.com/Articles/5366079/BigDecimal-in-Csharp). Ela foi necessária para o uso de BigDecimals no C#, uma vez que nenhuma de suas bibliotecas nativas tem suporte a esse tipo, somente a BigIntger.
+Este projeto utiliza a biblioteca Pfz.Math que pode ser encontrada [aqui](https://www.codeproject.com/Articles/5366079/BigDecimal-in-Csharp). Ela foi necessária para o uso de BigDecimals no C#, uma vez que nenhuma de suas bibliotecas nativas tem suporte a esse tipo, somente a BigInteger.
 
 Para o cálculo das casas decimais de π foram abordados três métodos durante o desenvolvimento em live:
 
